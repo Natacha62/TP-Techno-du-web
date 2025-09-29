@@ -12,6 +12,8 @@ L’objectif est de pratiquer la manipulation des inputs, radios, checkboxes, ba
 ```bash
 git clone https://github.com/Natacha62/TP-Techno-du-web.git
 
+---
+
 ## Utilisation
 convertisseur.html : convertit des devises entre euro, dollar américain et dollar australien.
 
@@ -22,8 +24,12 @@ google.html : interagit avec le DOM pour gérer :
 - l’affichage/masquage de sections avec des cases à cocher
 - la barre de progression animée
 
+---
+
 ##  Prérequis
 - Navigateur moderne (Chrome, Firefox, Edge...)
+
+---
 
 ## Outils utilisés
 - HTML5
