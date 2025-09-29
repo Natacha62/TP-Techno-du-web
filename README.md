@@ -11,6 +11,7 @@ L’objectif est de pratiquer la manipulation des inputs, radios, checkboxes, ba
 1. Cloner le dépôt :  
 ```bash
 git clone https://github.com/Natacha62/TP-Techno-du-web.git
+```
 
 ---
 
