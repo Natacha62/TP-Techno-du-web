@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Google</title>
+        <link rel="stylesheet" href="style2.css"/>
+    </head>
+    <body>
+        <div id="lienImages">
+            <h1>Lien et images</h1>
+            <a id="wikipedia" href="https://www.wikipedia.org/">La page principale de Wikipedia</a> <br>
+            <img src="images/Logo_Google.png" alt="Google">
+        </div>
+        <div id="menu">
+            <hr>
+            <h2>Des éléments !</h2>
+            <input type="text" id="reponse" value="Premiers pas en Javascript" size="25"> <br><br>
+            <input type="radio" id="C1" name="choix" value="1">
+            <label for="Choix1">Choix N°1</label>
+            <input type="radio" id="C2" name="choix" value="2" checked>
+            <label for="Choix2">Choix N°2</label>
+            <input type="radio" id="C3" name="choix" value="3">
+            <label for="Choix3">Choix N°3</label> <br><br>
+            <input type="password" value="default" size="15"> <br><br>
+            <!-- Appelle la fonction afficherVolume à chaque changement de valeur du slider -->
+            <input type="range" class="volume" min="0" max="100" oninput="afficherVolume(this)">
+            <label for="volume">Volume</label> <br>
+            <span id="volumeValue">0</span>
+            <br><br>
+            <label for="ouinon">Une case à cocher</label>
+            <input type="checkbox" value="case" id="ouinon"> <br><br>
+            <label for="date">Date :</label>
+            <input type="date" id="date"> <br><br>
+            <button id="verifier">Ok</button>
+            <hr>
+        </div>
+        <div id="barresProgression">
+            <h2>Barres de progression</h2>
+            <label>Téléchargement en cours :</label>
+            <progress value="50" max="100"></progress> <br><br>
+            <label>Espace disponible :</label>
+            <progress class="progress-space" value="50" max="100"></progress>
+            <hr>
+        </div>
+        <script src="google.js"></script>
+    </body>
+</html>
