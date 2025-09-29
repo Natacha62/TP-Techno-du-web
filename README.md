@@ -11,3 +11,23 @@ L’objectif est de pratiquer la manipulation des inputs, radios, checkboxes, ba
 1. Cloner le dépôt :  
 ```bash
 git clone https://github.com/Natacha62/TP-Techno-du-web.git
+
+## Utilisation
+convertisseur.html : convertit des devises entre euro, dollar américain et dollar australien.
+
+google.html : interagit avec le DOM pour gérer :
+- la barre de volume et la case “Mute”
+- les radios pour changer la source du volume
+- l’ajout dynamique d’images
+- l’affichage/masquage de sections avec des cases à cocher
+- la barre de progression animée
+
+##  Prérequis
+- Navigateur moderne (Chrome, Firefox, Edge...)
+
+## Outils utilisés
+- HTML5
+- CSS3
+- JavaScript (DOM API)
+- Visual Studio Code pour l'éditeur de texte
+- Git & GitHub pour la gestion du dépôt
