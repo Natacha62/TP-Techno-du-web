@@ -121,7 +121,7 @@ let interval = setInterval(function() {
 // Lors du chargement de la page
 window.addEventListener('load', function() {
     // Cacher les sections "lienImages" et "barresProgression"
-    let sections = document.querySelectorAll('#lienImages, #barresProgression');
+    let sections = document.querySelectorAll('#lienImages, #menu, #barresProgression');
     for (let i = 0; i < sections.length; i++) {
         sections[i].style.display = "none";
     }
@@ -143,6 +143,18 @@ window.addEventListener('load', function() {
     divCases.appendChild(lblLien);
     divCases.appendChild(document.createElement('br'));
 
+    // Case pour "Les éléments !"
+    let chkElem = this.document.createElement('input');
+    chkElem.type = 'checkbox';
+    chkElem.id = 'chkElem';
+    chkElem.checked = false;
+    let lblElem = document.createElement('label');
+    lblElem.htmlFor = 'chkElem';
+    lblElem.textContent = 'Afficher "les éléments !"';
+    divCases.appendChild(chkElem);
+    divCases.appendChild(lblElem);
+    divCases.appendChild(document.createElement('br'));
+
     // Case pour "Barres de progression"
     let chkProg = document.createElement('input');
     chkProg.type = 'checkbox';
@@ -161,6 +173,11 @@ window.addEventListener('load', function() {
     // Lien entre les cases à cocher et l'affichage des sections
     chkLien.addEventListener('change', function() {
         let section = document.getElementById('lienImages');
+        section.style.display = this.checked ? "block" : "none";
+    });
+
+    chkElem.addEventListener('change', function() {
+        let section = document.getElementById('menu');
         section.style.display = this.checked ? "block" : "none";
     });
 
